@@ -1,9 +1,11 @@
-.no-list {
-    padding: 10px;
-    text-align: center;
+#login .login_btn {
+	margin-top: 40px;
+	margin-left: 75px;
 }
 
-.float-right {
+
+
+/*.float-right {
     float: right;
 }
 
@@ -11,9 +13,4 @@
     margin: 10px 0px 0px 0px;
     padding: 10px;
     text-align: center;
-}
-
-.llCommentList {
-    margin: 10px 0px 0px 0px;
-}
-
+}*/

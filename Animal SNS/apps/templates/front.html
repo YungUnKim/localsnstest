@@ -1,13 +1,19 @@
 {% extends "base.html" %}
 
 {% block front %}
-<div id="login">
-    <h1 class="color-2">Hello Pusher!</h1>
-
-    <h3 class="color-1">We need your Name.</h3>
-
-    <button type="submit" id="facebook-btn" class="btn btn-primary" style="margin-top: 15px;">Login with Facebook</button>
+<div id="maximage">
+  <img src="../static/images/front_001.jpg" width="1440px" height="740px">
+  <img src="../static/images/front_002jpg" width="1440px" height="740px">
+  <img src="../static/images/front_003.jpg" width="1440px" height="740px">
+  <img src="../static/images/front_004.jpg" width="1440px" height="740px">
+  <img src="../static/images/front_005.jpg" width="1440px" height="740px">
+  <img src="../static/images/front_006.jpg" width="1440px" height="740px">
+  <img src="../static/images/front_007.jpg" width="1440px" height="740px">
 </div>
 
-<script src="{{ url_for('static', filename='js/login.js') }}"></script>
+<div id="login">
+    <button type="submit" id="login_btn" class="btn btn-primary">페이스 북으로 가입하기</button>
+</div>
+
+<!-- <script src="{{ url_for('static', filename='js/login.js') }}"></script> -->
 {% endblock %}
