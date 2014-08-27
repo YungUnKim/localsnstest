@@ -1,0 +1,46 @@
+/*============================================*/
+/*front.html*/
+#maximage {
+    /*              position:fixed !important;*/
+}
+#maximage img{
+    width: inherit;s
+    max-width: 100%;
+    height: auto;
+}
+
+/*Set my logo in bottom left*/
+#logo {
+    bottom:30px;
+    height:auto;
+    left:30px;
+    position:absolute;
+    width:34%;
+    z-index:1000;
+}
+#logo img {
+    width:100%;
+}
+
+#login {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    /*margin-left: -250px;*/
+    /*margin-top: -175px;*/
+    text-align: center;
+}
+
+#login p{
+    font-family: Helvetica;
+    font-size: 20px;
+    
+}
+/*front.html end*/
+/*============================================*/
+body {
+    margin: 0;
+    padding: 0;
+}

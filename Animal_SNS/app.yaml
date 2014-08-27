@@ -1,0 +1,55 @@
+application: likeliontest1984
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+### builtins: import appengine native builtin services ###
+builtins:
+- appstats: on
+- admin_redirect: on
+- deferred: on
+- remote_api: on
+
+### handlers: set script or static files by url pattern ###
+handlers:
+- url: /static
+  static_dir: apps/static
+
+- url: .*
+  script: apps.app
+
+### libraries: import third-party libraries in python 2.7 ###
+libraries:
+- name: jinja2
+  version: "2.6"
+
+- name: markupsafe
+  version: "0.15"
+
+  - url: /
+  script: index.html
+
+  - url: /css
+  static_dir: css
+  mime_type: "text/css"
+
+  - url: /static/(.*\.pdf)$
+  static_files: static/\1
+  upload: static/.*\.pdf$
+  mime_type: "application/pdf"
+
+  - url: /img/(.*\.gif)$
+  static_files: img/\1
+  upload: img/.*\.gif$
+  mime_type: "image/gif"
+
+  - url: /img/(.*\.png)$
+  static_files: img/\1
+  upload: img/.*\.png$
+  mime_type: "image/x-png"
+
+  - url: /img/(.*\.jpg)$
+  static_files: img/\1
+  upload: img/.*\.jpg$
+  mime_type: "image/jpeg"

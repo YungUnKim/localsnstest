@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block contents %}
+<div id="maximage">
+    <img src="../static/img/front_001.png" alt="" />
+    <img src="../static/img/front_002.png" alt="" />
+    <img src="../static/img/front_003.png" alt="" />
+    <img src="../static/img/front_004.png" alt="" />
+    <img src="../static/img/front_005.png" alt="" />
+    <img src="../static/img/front_006.png" alt="" />
+    <img src="../static/img/front_007.png" alt="" />
+</div>
+
+<div id="login">
+    <button type="submit" id="facebook-btn" class="btn btn-primary" style="margin-top: 15px;">
+        <i class="fa fa-facebook-square fa-2x"></i>&nbsp;&nbsp;Start Now
+    </button>
+</div>
+
+
+
+<script type="text/javascript" charset="utf-8">
+    $(function(){
+                // Trigger maximage
+                jQuery('#maximage').maximage();
+            });
+</script>
+
+
+{% endblock %}
