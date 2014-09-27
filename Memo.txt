@@ -1,8 +1,0 @@
-Display Name
-- Real World SNS
-
-App ID
-- 957444870947632
-
-App Secret
-- 14a039c16ced11c3b0b4f5d434597f86
