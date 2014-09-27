@@ -1,5 +1,5 @@
 application: innate-actor-680
-version: 1
+version: v2
 runtime: python27
 api_version: 1
 threadsafe: yes

@@ -2,6 +2,19 @@ body {
     margin: 0;
     padding: 0;
 }
+/*====================================*/
+#servertime {
+    width: 70%;
+    height: 30%;
+    padding: 20px;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    float: left;
+    background-color: #FCB080;
+    word-break: break-all;
+}
+/*====================================*/
 
 #login {
     width: 500px;
@@ -16,7 +29,7 @@ body {
 
 #chatpanel {
     width: 70%;
-    height: 80%;
+    height: 40%;
     padding: 20px;
     position: absolute;
     overflow-x: hidden;
